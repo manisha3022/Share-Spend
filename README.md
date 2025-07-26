@@ -3,16 +3,36 @@
 A bill-splitting application to track shared expenses in a group, developed with
 Node and React.
 
-## Explanation of Transaction Minimisation Algorithm
+## 🚀 Features
 
-We implemented a greedy algorithm to minimise the number of transactions
-required to settle the debts between all members of a group. The algorithm runs in O(n log n), where n is the number
-of users – this means that it scales well with the number of users.
+- 📊 Track who paid for what, and who owes whom
+- 👥 Manage group members and shared expenses
+- 💡 **Smart Debt Minimization** — reduces number of total payments
+- 🔐 Secure user login and group-based tracking
+- 📱 Responsive UI for mobile and desktop
 
-A simple example of this algorithm . In this example, Alice owes
-Bob ₹10 and Bob owes Charlie ₹10 for a total of two transactions. The algorithm
-will suggest that Alice pays Charlie ₹10 directly, meaning only one transaction
-is required to settle the debts.
+## 💡 Smart Debt Minimization Example
+
+Imagine a scenario in your group:
+
+- `Praveen` paid ₹500 for a canteen expense shared by multiple members
+- `Rishi` paid ₹100 for another shared activity
+- The logged-in user is `Manisha`
+
+After the app processes all expenses and splits:
+
+- **Manisha** is owed ₹500
+- **Harshu** is owed ₹500
+- Other members (like `Akhi`, `Harsh`, etc.) owe money
+
+➡️ Even though **Praveen** paid money, the algorithm adjusts for all shared expenses and prior payments — resulting in a net balance where **Manisha and Harshu are owed**.
+
+✅ So instead of multiple people paying each other in circles, the app simplifies it like this:
+
+- `Akhi` pays **Manisha** ₹500  
+- `Harsh` pays **Harshu** ₹500
+
+This minimizes confusion and settles debts in just 2 transactions instead of 4–5.
 
 ## Screenshots
 
