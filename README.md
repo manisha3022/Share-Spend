@@ -1,7 +1,6 @@
 # ShareSpend
 
-A bill-splitting application to track shared expenses in a group, developed with
-Node and React.
+A user-friendly **bill-splitting application** that helps friend groups easily manage and settle shared expenses. Built using **React**, **Node.js**, and **MongoDB**, ShareSpend intelligently minimizes transactions between group members.
 
 ## 🚀 Features
 
